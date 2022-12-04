@@ -15,6 +15,12 @@
 
   cursor: pointer;
 
+  &:hover {
+    span {
+      color: #FFF;
+    }
+  }
+
   span {
     font-size: 0.80rem;
     font-weight: 300;

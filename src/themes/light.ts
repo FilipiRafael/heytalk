@@ -12,7 +12,7 @@ const lightTheme = {
       cardBorderColor: '#2D8CFF',
 
       buttonBackground: '#2D8CFF',
-      buttonBackgroundOnHover: '#F6F6F6',
+      buttonBackgroundOnHover: '#2D8CFF',
       buttonTextColor: '#FFF',
 
       iconsColor: '#2D8CFF',
