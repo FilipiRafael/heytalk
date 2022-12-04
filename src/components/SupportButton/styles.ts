@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
-export const Button = styled.button`
+export const Button = styled.a`
   width: 120px;
   height: 40px;
   background-color: ${props => props.theme.colors.buttonBackground};
@@ -14,6 +14,7 @@ export const Button = styled.button`
 
   font-size: 0.95rem;
   color: ${props => props.theme.colors.buttonTextColor};
+  text-decoration: none;
 
   display: flex;
   justify-content: center;

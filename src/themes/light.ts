@@ -8,14 +8,14 @@ const lightTheme = {
       boldTextColored: '#228891',
       
       backgroundColor: '#FFF',
-      borderColor: '#EEEEEE',
-      cardBorderColor: '#DDDDDD',
+      borderColor: '#2D8CFF',
+      cardBorderColor: '#2D8CFF',
 
-      buttonBackground: '#F6BA04',
+      buttonBackground: '#2D8CFF',
       buttonBackgroundOnHover: '#F6F6F6',
-      buttonTextColor: '#614C0E',
+      buttonTextColor: '#FFF',
 
-      iconsColor: '#228891',
+      iconsColor: '#2D8CFF',
     },
   };
 

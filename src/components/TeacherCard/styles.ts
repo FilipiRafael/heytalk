@@ -24,7 +24,7 @@ export const ActionButton = styled.button<ActionButtonProps>`
 
   color: ${props => 
     props.primary ? 
-      props.theme.colors.boldText : '#3D3D3D'
+      '#FFF' : '#3D3D3D'
   };
   
   background-color: ${props => 
