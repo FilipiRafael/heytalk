@@ -5,17 +5,17 @@ const darkTheme = {
       hoverText: '#FFF',
       placeholderText: '#CCC',
       boldText: '#FFF',
-      boldTextColored: '#F26D21',
+      boldTextColored: '#2D8CFF',
       
-      backgroundColor: '#191C1E',
-      borderColor: '#F26D21',
-      cardBorderColor: '#F26D21',
+      backgroundColor: '#10151F',
+      borderColor: '#2D8CFF',
+      cardBorderColor: '#2D8CFF',
 
-      buttonBackground: '#F26D21',
-      buttonBackgroundOnHover: '#F26D21',
+      buttonBackground: '#2D8CFF',
+      buttonBackgroundOnHover: '#2D8CFF',
       buttonTextColor: '#FFF',
 
-      iconsColor: '#F26D21',
+      iconsColor: '#2D8CFF',
     },
   };
 
