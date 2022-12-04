@@ -21,7 +21,10 @@ export const Navbar = ({ isDarkTheme = false, changeTheme }: NavBarProps) => {
   return (
     <Container>
       <Wrapper>
-        <Brand src="/images/brand.png" alt="Cambly Brand" />
+        {isDarkTheme ? 
+          <Brand src='/images/text-white-brand.svg' alt='HeyTalk Brand' />
+          : <Brand src='/images/brand.svg' alt='HeyTalk Brand' />
+        }
         <Menu>
           <span>Professores</span>
           <span>Currículos</span>

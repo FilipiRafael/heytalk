@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.img`
-  width: 140px;
+  width: 120px;
   margin-right: 1rem;
 `;
 
