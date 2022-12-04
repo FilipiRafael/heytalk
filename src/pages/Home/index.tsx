@@ -87,6 +87,7 @@ export const Home = () => {
         <TeachersList>
           {teacherList.map((teacher) => (
             <TeacherCard
+              isDarkTheme={isDarkTheme}
               handleUpdateFavoriteList={handleUpdateFavoriteList}
               key={teacher.id}
               id={teacher.id}
@@ -97,6 +98,7 @@ export const Home = () => {
               country={teacher.country}
               favorite={teacher.favorite}
               online={teacher.online}
+              tag={teacher.tag}
             />
           ))}
         </TeachersList>

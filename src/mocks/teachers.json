@@ -7,7 +7,8 @@
     "photo": "https://github.com/filipirafael.png",
     "about": "I am from São Paulo Brazil and currently living in Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": true,
-    "online": true
+    "online": true,
+    "tag": "Just Conversation"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "photo": "/images/tutors/2.svg",
     "about": "I am from Melbourne Australia and currently living in Spain. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": true,
-    "online": true
+    "online": true,
+    "tag": "Games"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "photo": "/images/tutors/3.svg",
     "about": "I am from England. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Movies/Series"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "photo": "/images/tutors/4.svg",
     "about": "I am from Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Travel"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "photo": "/images/tutors/5.svg",
     "about": "I am from United States. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Just Conversation"
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "photo": "/images/tutors/6.svg",
     "about": "I am from Australia. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Games"
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "photo": "/images/tutors/7.svg",
     "about": "I am from England. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Travel"
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "photo": "/images/tutors/8.svg",
     "about": "I am from Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Movies/Series"
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "photo": "/images/tutors/9.svg",
     "about": "I am from United States. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Travel"
   },
   {
     "id": 10,
@@ -97,6 +106,7 @@
     "photo": "/images/tutors/10.svg",
     "about": "I am from United States. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true
+    "online": true,
+    "tag": "Games"
   }
 ]

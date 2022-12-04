@@ -4,6 +4,10 @@ interface ActionButtonProps {
   primary: boolean;
 }
 
+interface TagProps {
+  isDarkTheme: boolean;
+}
+
 export const Avatar = styled.img`
   width: 100%;
   height: 100%;
@@ -147,4 +151,16 @@ export const TeacherAbout = styled.p`
   color: ${props => props.theme.colors.normalText};
 
   margin: 1rem 0;
+`;
+
+export const Tag = styled.span<TagProps>`
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: ${props => props.isDarkTheme ? '#000' : '#000'};
+
+  margin-top: 0.8rem;
+  padding: 0.5rem;
+  background-color: #DDD;
+
+  border-radius: 0.2rem;
 `;

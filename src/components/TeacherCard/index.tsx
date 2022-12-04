@@ -12,7 +12,8 @@ import {
   TeacherFlag,
   TeacherAbout,
   ActionButton,
-  ButtonWrapper
+  ButtonWrapper,
+  Tag
 } from './styles';
 
 import { FavoriteButton } from '../../components/FavoriteButton';
@@ -21,6 +22,7 @@ import { ITeacherListProps } from '../../types/shared';
 
 interface TeacherCardProps extends ITeacherListProps {
   handleUpdateFavoriteList: (id: number) => void;
+  isDarkTheme: boolean;
 }
 
 export const TeacherCard = ({
@@ -32,7 +34,9 @@ export const TeacherCard = ({
   favorite,
   online,
   handleUpdateFavoriteList,
-  id
+  id,
+  tag,
+  isDarkTheme
 }: TeacherCardProps) => {
   return (
     <Card>
@@ -54,6 +58,7 @@ export const TeacherCard = ({
             <TeacherFlag src={flag} alt='Country Flag' />
             <TeacherCountry>{country}</TeacherCountry>
           </FlexWrapper>
+          <Tag isDarkTheme={isDarkTheme}>{tag}</Tag>
         </InfoWrapper>
       </BioWrapper>
       <TeacherAbout>{about}</TeacherAbout>

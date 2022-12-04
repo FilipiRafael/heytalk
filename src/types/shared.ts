@@ -7,4 +7,5 @@ export interface ITeacherListProps {
   about: string;
   favorite: boolean;
   online: boolean;
+  tag: string;
 }
