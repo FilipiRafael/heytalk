@@ -75,7 +75,7 @@ export const Home = () => {
           <Tag text='Games' />
           <Tag text='Movies/Series' />
           <Tag text='Travel' />
-          <Tag text='Policy' />
+          <Tag text='Todos' />
         </TagsWrapper>
       </Container>
 
