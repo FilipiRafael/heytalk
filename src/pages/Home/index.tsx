@@ -50,13 +50,13 @@ export const Home = () => {
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <Navbar isDarkTheme={isDarkTheme} changeTheme={setIsDarkTheme} />
       <Banner>
-        <Title>Welcome back, Filipi</Title>
+        <Title>Hey Filipi, let's talk?</Title>
       </Banner>
 
       <Container>
         <FlexWrapper>
           <Wrapper>
-            <Subtitle>Encontre um professor</Subtitle>
+            <Subtitle>Conheça novas pessoas</Subtitle>
             <OnlineTag>On-line</OnlineTag>
             <FavoritesTag>Favoritos</FavoritesTag>
           </Wrapper>
@@ -71,17 +71,17 @@ export const Home = () => {
         </FlexWrapper>
 
         <TagsWrapper>
-          <Tag text='Escolha o currículo' />
-          <Tag text='Nível de aula' />
-          <Tag text='Sotaque' />
-          <Tag text='Personalidade' />
-          <Tag text='Disponibilidade' />
+          <Tag text='Just Conversation' />
+          <Tag text='Games' />
+          <Tag text='Movies/Series' />
+          <Tag text='Travel' />
+          <Tag text='Policy' />
         </TagsWrapper>
       </Container>
 
       <Container>
         <Wrapper>
-            <DisponibilityTitle>Professores disponíveis</DisponibilityTitle>
+            <DisponibilityTitle>Pessoas online agora</DisponibilityTitle>
         </Wrapper>
 
         <TeachersList>
