@@ -5,7 +5,7 @@ const lightTheme = {
       hoverText: '#717171',
       placeholderText: '#ACACAC',
       boldText: '#3D3D3D',
-      boldTextColored: '#228891',
+      boldTextColored: '#2D8CFF',
       
       backgroundColor: '#FFF',
       borderColor: '#2D8CFF',
