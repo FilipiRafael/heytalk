@@ -32,6 +32,7 @@ import { ITeacherListProps } from '../../types/shared';
 export const Home = () => {
 
   const [teacherList, setTeacherList] = useState<ITeacherListProps[]>(teacherListApi);
+  const [teacherFilteredList, setTeacherFilteredList] = useState(teacherListApi);
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
   const handleUpdateFavoriteList = (id: number) => {
@@ -44,6 +45,11 @@ export const Home = () => {
     newList[teacherIndex].favorite = !newList[teacherIndex].favorite
 
     setTeacherList(newList);
+  }
+
+  const handleFilterByTag = (tag: string) => {
+    const teacherListFiltered = teacherList.filter((teacher) => teacher.tag === tag);
+    setTeacherFilteredList(teacherListFiltered);
   }
  
   return (
@@ -71,11 +77,10 @@ export const Home = () => {
         </FlexWrapper>
 
         <TagsWrapper>
-          <Tag text='Just Conversation' />
-          <Tag text='Games' />
-          <Tag text='Movies/Series' />
-          <Tag text='Travel' />
-          <Tag text='Todos' />
+          <Tag 
+            setFilteredList={() => setTeacherFilteredList(teacherList)}
+            filter={handleFilterByTag}
+          />
         </TagsWrapper>
       </Container>
 
@@ -85,22 +90,41 @@ export const Home = () => {
         </Wrapper>
 
         <TeachersList>
-          {teacherList.map((teacher) => (
-            <TeacherCard
-              isDarkTheme={isDarkTheme}
-              handleUpdateFavoriteList={handleUpdateFavoriteList}
-              key={teacher.id}
-              id={teacher.id}
-              name={teacher.name}
-              photo={teacher.photo}
-              about={teacher.about}
-              flag={teacher.flag}
-              country={teacher.country}
-              favorite={teacher.favorite}
-              online={teacher.online}
-              tag={teacher.tag}
-            />
-          ))}
+          {teacherFilteredList.length > 0 ? (
+            teacherFilteredList.map((teacher) => (
+              <TeacherCard
+                isDarkTheme={isDarkTheme}
+                handleUpdateFavoriteList={handleUpdateFavoriteList}
+                key={teacher.id}
+                id={teacher.id}
+                name={teacher.name}
+                photo={teacher.photo}
+                about={teacher.about}
+                flag={teacher.flag}
+                country={teacher.country}
+                favorite={teacher.favorite}
+                online={teacher.online}
+                tag={teacher.tag}
+              />
+            ))
+          ) : (
+            teacherList.map((teacher) => (
+              <TeacherCard
+                isDarkTheme={isDarkTheme}
+                handleUpdateFavoriteList={handleUpdateFavoriteList}
+                key={teacher.id}
+                id={teacher.id}
+                name={teacher.name}
+                photo={teacher.photo}
+                about={teacher.about}
+                flag={teacher.flag}
+                country={teacher.country}
+                favorite={teacher.favorite}
+                online={teacher.online}
+                tag={teacher.tag}
+              />
+            ))
+          )}
         </TeachersList>
       </Container>
 
