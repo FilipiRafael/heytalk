@@ -16,12 +16,12 @@ export const Tag = ({ filter, setFilteredList }: TagProps) => {
   return (
     <>
       {tags.map((tag) => (
-        <TagComponent key={tag}>
-          <span onClick={() => filter(tag)}>{tag}</span>
+        <TagComponent key={tag} onClick={() => filter(tag)}>
+          <span>{tag}</span>
         </TagComponent>
       ))}
-      <TagComponent>
-        <span onClick={setFilteredList}>Todos</span>
+      <TagComponent onClick={setFilteredList}>
+        <span>Todos</span>
       </TagComponent>
     </>
   )
