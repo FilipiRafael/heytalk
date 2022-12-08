@@ -12,101 +12,13 @@
   },
   {
     "id": 2,
-    "name": "Ethan D.",
-    "flag": "/images/flags/australia.svg",
-    "country": "Australia",
-    "photo": "/images/tutors/2.svg",
-    "about": "I am from Melbourne Australia and currently living in Spain. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": true,
-    "online": true,
-    "tag": "Games"
-  },
-  {
-    "id": 3,
-    "name": "Eva",
-    "flag": "/images/flags/england.svg",
-    "country": "England",
-    "photo": "/images/tutors/3.svg",
-    "about": "I am from England. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
+    "name": "Filipi",
+    "flag": "/images/flags/brazil.svg",
+    "country": "Brazil",
+    "photo": "https://github.com/filipirafael.png",
+    "about": "I am from São Paulo Brazil and currently living in Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
     "favorite": false,
-    "online": true,
-    "tag": "Movies/Series"
-  },
-  {
-    "id": 4,
-    "name": "Teacher Wayne",
-    "flag": "/images/flags/canada.svg",
-    "country": "Canada",
-    "photo": "/images/tutors/4.svg",
-    "about": "I am from Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
-    "tag": "Travel"
-  },
-  {
-    "id": 5,
-    "name": "John Dickson",
-    "flag": "/images/flags/unitedstates.svg",
-    "country": "United States of America",
-    "photo": "/images/tutors/5.svg",
-    "about": "I am from United States. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
-    "tag": "Just Conversation"
-  },
-  {
-    "id": 6,
-    "name": "Ashley.",
-    "flag": "/images/flags/australia.svg",
-    "country": "Australia",
-    "photo": "/images/tutors/6.svg",
-    "about": "I am from Australia. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
-    "tag": "Games"
-  },
-  {
-    "id": 7,
-    "name": "Dani M.",
-    "flag": "/images/flags/england.svg",
-    "country": "England",
-    "photo": "/images/tutors/7.svg",
-    "about": "I am from England. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
-    "tag": "Travel"
-  },
-  {
-    "id": 8,
-    "name": "Joanne A..",
-    "flag": "/images/flags/canada.svg",
-    "country": "Canada",
-    "photo": "/images/tutors/8.svg",
-    "about": "I am from Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
-    "tag": "Movies/Series"
-  },
-  {
-    "id": 9,
-    "name": "Tutor Dante",
-    "flag": "/images/flags/unitedstates.svg",
-    "country": "United States of America",
-    "photo": "/images/tutors/9.svg",
-    "about": "I am from United States. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
-    "tag": "Travel"
-  },
-  {
-    "id": 10,
-    "name": "Maribel Law",
-    "flag": "/images/flags/unitedstates.svg",
-    "country": "United States of America",
-    "photo": "/images/tutors/10.svg",
-    "about": "I am from United States. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
-    "online": true,
+    "online": false,
     "tag": "Games"
   }
 ]

@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 export const Banner = styled.div`
   width: 100vw;
   height: 390px;
-  background-image: url('/images/night-banner.svg');
+  background-image: url('/images/banner.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
