@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import SearchIcon from '@mui/icons-material/Search';
 
-interface mainFilterProps {
+interface MainFilterProps {
   mainFilter: string;
 }
 
@@ -76,14 +76,14 @@ export const Subtitle = styled.h2`
   color: ${props => props.theme.colors.boldText};
 `;
 
-export const OnlineTag = styled.span<mainFilterProps>`
+export const OnlineTag = styled.span<MainFilterProps>`
   font-size: 0.90rem;
   font-weight: ${props => props.mainFilter === 'online' ? 500 : 300};
   cursor: pointer;
   color: ${props => props.mainFilter === 'online' ? props.theme.colors.boldTextColored : props.theme.colors.normalText}
 `;
 
-export const FavoritesTag = styled.span<mainFilterProps>`
+export const FavoritesTag = styled.span<MainFilterProps>`
   font-size: 0.90rem;
   font-weight: ${props => props.mainFilter === 'favorite' ? 500 : 300};
   cursor: pointer;

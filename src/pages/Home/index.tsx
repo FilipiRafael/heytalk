@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { 
+import {
   Banner,
   Title,
   Wrapper,
@@ -17,9 +17,9 @@ import {
 } from './styles';
 
 import { Navbar } from '../../components/Navbar';
-import { SupportButton } from '../../components/SupportButton';
 import { Tag } from '../../components/Tag'; 
 import { TeacherCard } from '../../components/TeacherCard';
+import { Footer } from '../../components/Footer';
 
 import { ThemeProvider } from 'styled-components';
 import lightTheme from '../../themes/light';
@@ -144,7 +144,7 @@ export const Home = () => {
         </TeachersList>
       </Container>
 
-      <SupportButton />
+      <Footer />
     </ThemeProvider>
   )
 }
