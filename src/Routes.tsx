@@ -1,6 +1,7 @@
 // import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import { SignIn } from './pages/SignIn';
 import { Home } from './pages/Home';
 
 export function AppRoutes() {
@@ -11,14 +12,8 @@ export function AppRoutes() {
   return (
     <Router>
       <Routes>
-        {true ? (
-          <Route path='/home' element={<Home />} />
-        ) : (
-          <>
-            {/* <Route path='/' element={<SignIn />} setUser={setUser} setIsAuth={setIsAuth} />
-            <Route path='/signup' element={<SignUp />} setUser={setUser} setIsAuth={setIsAuth} /> */}
-          </>
-        )}
+        <Route path='/' element={<SignIn />} /> 
+        <Route path='/home' element={<Home />} />
       </Routes>
     </Router>
   )
