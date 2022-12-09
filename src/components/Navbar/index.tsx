@@ -25,11 +25,7 @@ export const Navbar = ({ isDarkTheme = false, changeTheme }: NavBarProps) => {
           <Brand src='/images/text-white-brand.svg' alt='HeyTalk Brand' />
           : <Brand src='/images/brand.svg' alt='HeyTalk Brand' />
         }
-        <Menu>
-          <span>Professores</span>
-          <span>Currículos</span>
-          <span>Progresso</span>
-        </Menu>
+        <Menu></Menu>
       </Wrapper>
       <Wrapper>
         {isDarkTheme ? 

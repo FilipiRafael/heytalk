@@ -32,8 +32,11 @@ import { ITeacherListProps } from '../../types/shared';
 export const Home = () => {
 
   const [teacherList, setTeacherList] = useState<ITeacherListProps[]>(teacherListApi);
+
   const [teacherFilteredList, setTeacherFilteredList] = useState(teacherListApi);
   const [mainFilter, setMainFilter] = useState<'online' | 'favorite'>('online');
+  const [searchText, setSearchText] = useState<string>('');
+
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
   const handleUpdateFavoriteList = (id: number) => {
@@ -57,6 +60,21 @@ export const Home = () => {
     setTeacherFilteredList(mainFilterList);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mainFilter]);
+
+  useEffect(() => {
+    if (searchText) {
+      const filteredList = teacherFilteredList.filter((teacher) => 
+        teacher.name.toLowerCase().includes(searchText.toLowerCase()) ||
+        teacher.country.toLowerCase().includes(searchText.toLowerCase()) ||
+        teacher.about.toLowerCase().includes(searchText.toLowerCase())
+      );
+
+      setTeacherFilteredList(filteredList);
+    } else {
+      setTeacherFilteredList(teacherList);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchText]);
  
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
@@ -87,6 +105,10 @@ export const Home = () => {
               <SearchIconField />
               <InputField
                 placeholder='Nome, idioma, hobby'
+                value={searchText}
+                onChange={(e) => {
+                  setSearchText(e.target.value);
+                }}
               />
             </SearchField>
           </Wrapper>
