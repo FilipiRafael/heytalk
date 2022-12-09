@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Banner,
   Title,
@@ -33,10 +33,10 @@ export const Home = () => {
 
   const [teacherList, setTeacherList] = useState<ITeacherListProps[]>(teacherListApi);
   const [teacherFilteredList, setTeacherFilteredList] = useState(teacherListApi);
+  const [mainFilter, setMainFilter] = useState<'online' | 'favorite'>('online');
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
 
   const handleUpdateFavoriteList = (id: number) => {
-
     const teacherIndex = teacherList.findIndex((teacher) => {
       return teacher.id === id;
     })
@@ -51,6 +51,12 @@ export const Home = () => {
     const teacherListFiltered = teacherList.filter((teacher) => teacher.tag === tag);
     setTeacherFilteredList(teacherListFiltered);
   }
+
+  useEffect(() => {
+    const mainFilterList = teacherList.filter((teacher) => mainFilter === 'online' ? teacher.online : teacher.favorite);
+    setTeacherFilteredList(mainFilterList);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mainFilter]);
  
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
@@ -63,8 +69,18 @@ export const Home = () => {
         <FlexWrapper>
           <Wrapper>
             <Subtitle>Conheça novas pessoas</Subtitle>
-            <OnlineTag>On-line</OnlineTag>
-            <FavoritesTag>Favoritos</FavoritesTag>
+            <OnlineTag
+              mainFilter={mainFilter}
+              onClick={() => setMainFilter('online')}
+            >
+              On-line
+            </OnlineTag>
+            <FavoritesTag
+              mainFilter={mainFilter}
+              onClick={() => setMainFilter('favorite')}
+            >
+              Favoritos
+            </FavoritesTag>
           </Wrapper>
           <Wrapper>
             <SearchField>

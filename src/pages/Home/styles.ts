@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 import SearchIcon from '@mui/icons-material/Search';
 
+interface mainFilterProps {
+  mainFilter: string;
+}
+
 export const Banner = styled.div`
   width: 100vw;
   height: 390px;
@@ -72,18 +76,18 @@ export const Subtitle = styled.h2`
   color: ${props => props.theme.colors.boldText};
 `;
 
-export const OnlineTag = styled.span`
+export const OnlineTag = styled.span<mainFilterProps>`
   font-size: 0.90rem;
-  font-weight: 500;
+  font-weight: ${props => props.mainFilter === 'online' ? 500 : 300};
   cursor: pointer;
-  color: ${props => props.theme.colors.boldTextColored};
+  color: ${props => props.mainFilter === 'online' ? props.theme.colors.boldTextColored : props.theme.colors.normalText}
 `;
 
-export const FavoritesTag = styled.span`
+export const FavoritesTag = styled.span<mainFilterProps>`
   font-size: 0.90rem;
-  font-weight: 300;
+  font-weight: ${props => props.mainFilter === 'favorite' ? 500 : 300};
   cursor: pointer;
-  color: ${props => props.theme.colors.normalText};
+  color: ${props => props.mainFilter === 'favorite' ? props.theme.colors.boldTextColored : props.theme.colors.normalText}
 `;
 
 export const SearchField = styled.div`

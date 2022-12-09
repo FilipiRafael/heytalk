@@ -6,7 +6,7 @@
     "country": "Brazil",
     "photo": "https://github.com/filipirafael.png",
     "about": "I am from São Paulo Brazil and currently living in Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": true,
+    "favorite": false,
     "online": true,
     "tag": "Just Conversation"
   },
@@ -17,7 +17,7 @@
     "country": "Brazil",
     "photo": "https://github.com/filipirafael.png",
     "about": "I am from São Paulo Brazil and currently living in Canada. My accent is native and easy to understand. I am a very friendly, welcoming and patient tutor that is always happy to help.",
-    "favorite": false,
+    "favorite": true,
     "online": false,
     "tag": "Games"
   }
