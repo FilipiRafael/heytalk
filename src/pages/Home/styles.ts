@@ -41,6 +41,7 @@ export const TeachersList = styled.div`
   place-items: center;
 
   width: 100%;
+  margin-bottom: 2rem;
 
   row-gap: 2rem;
   column-gap: 0.5rem;
