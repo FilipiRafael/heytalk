@@ -18,7 +18,7 @@ export const BrandStyled = styled.img`
 
 export const VectorStyled = styled.img`
   position: absolute;
-  bottom: 5rem;
+  bottom: 3rem;
   right: 8%;
   z-index: 1;
   margin: auto;
