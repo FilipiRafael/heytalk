@@ -18,11 +18,11 @@ export const BrandStyled = styled.img`
 
 export const VectorStyled = styled.img`
   position: absolute;
-  bottom: -2rem;
+  bottom: 5rem;
   left: 0;
   z-index: 1;
   margin: auto;
-  width: 980px;
+  width: 920px;
 
   animation: pulse;
   animation-duration: 2.5s;
